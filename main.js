@@ -7,10 +7,6 @@ let ytemp = [];
 let xdate = [];
 
 
-let temperature = [];
-let date = [];
-
-
 button.addEventListener('click', (event)=>{
     event.preventDefault();
     let recherche = search.value;
@@ -41,7 +37,6 @@ button.addEventListener('click', (event)=>{
       
       
       liste.insertAdjacentHTML('beforeend', `
-      <ul>
         <li>
         <h3 class="city-name" data-name="${city.name},${city.country}">
           <span>${city.name}</span>
@@ -101,13 +96,9 @@ button.addEventListener('click', (event)=>{
           <figcaption>${data.list[4].weather[0].description}</figcaption>
         </figure>
         </li>
-      </ul>
-
       `);
    getMap(data.city.coord.lat, data.city.coord.lon);               
         });
       search.value = "";
-
-
 });
         
