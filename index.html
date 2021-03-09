@@ -16,8 +16,10 @@
 </head>
 <body>
     <div class="wrap">
+        <div class="container">
         <h1 id="title">Météo</h1>
         <form id="main-section">
+            
             <div class="search">
                 <input type="text" class="searchTerm" id="keyword" placeholder="ville?">>
                 <input type="submit" class="searchButton" id="bouton">
@@ -26,7 +28,7 @@
 
             <div class="ajax-section">
                <div class="container">
-                 <ul class="list">
+                 <ul class="d-flex list">
                  </ul>
                </div>
             </div>
@@ -36,6 +38,7 @@
             <canvas id="myChart" width="400" height="400"></canvas>
             </form>        
         </div>
+    </div>
     <script src="main.js"></script>
     <script src="map.js"></script>
     <script src="graph.js"></script>
